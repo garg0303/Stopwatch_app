@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText"
+    android:background="@color/white">
+
+
+
+    <ImageView
+        android:layout_width="402dp"
+        android:layout_height="183dp"
+        android:src="@drawable/halfcircle"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="0dp">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/play_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:onClick="onClickStart"
+        android:src="@drawable/pp"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="100dp"></ImageView>
+    <TextView
+        android:id="@+id/time_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0:00:07"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="serif-monospace"
+        android:textSize="70sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="50dp"/>
+        />
+
+    <ImageView
+        android:id="@+id/stop_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:onClick="onClickStop"
+        android:src="@drawable/ss"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="250dp" />
+
+    <ImageView
+        android:id="@+id/reset_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:onClick="onClickReset"
+        android:src="@drawable/reset"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="180dp" />
+
+</RelativeLayout>
